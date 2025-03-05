@@ -1,0 +1,110 @@
+
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "header"
+        "nav" 
+        "section"
+        "footer";
+    height: 100vh;
+    gap:10px;
+    background: #FCEEF5;
+    color: #3E2723;
+}
+
+header{
+background: color #f8d7da;
+grid-area:header;
+text-align: center;
+padding: 10px;
+background: url('../img/header2.jpg') no-repeat center/cover, #F5E8DD;
+height: 30vh;
+}
+
+nav{
+background: #f8d7da;
+grid-area:nav;
+padding: 10px;
+}
+
+section {
+background: #FFDDE2;
+color: white;
+grid-area:section;
+padding: 10px;
+}
+
+footer{
+background: #e6a4b4;
+grid-area:footer;
+text-align: center;
+padding: 10px;
+}
+
+.card-container {
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+    gap: 10px;	
+}
+
+.card {
+	background-color: #fff8f0;
+	color: #3E2723;
+	padding: 15px;
+	border-radius: 10px;
+	text-align: center;
+	width: 80%;
+}
+/* En mobile-first, solo mostramos la primera card y ocultamos todas las demás */
+/* Esto se anulará en el media query para pantallas más grandes */
+.card:not(:first-child) { 
+    display: none;
+  }
+
+.card img{
+	width: 100%;
+	border-radius: 8px;
+    height: 30vh;
+    object-fit: cover;
+}
+/* Aquí probamos la orientacion de la pantalla */
+/* Es útil cuando queremos que un vídeo o imagen se adapte en caso de que un dispositivo se encuentre "recostado".. ejemplo: youtube */
+/* Pueden sacarlo para el desafío, solo era una demostración de como funciona */
+@media (orientation: landscape){
+    body{
+        background: lightblue;
+    }
+
+
+}
+@media (min-width: 576px) {
+    
+    body{
+        grid-template-areas: 
+        "header header"
+        "nav section"
+        "footer footer";
+        grid-template-columns: 1fr 3fr;
+        height: 100vh;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    /* Mostramos nuevamente todas las cards que se ocultaron en mobile */
+    /* Ahora usamos grid para distribuirlas en columnas */
+    .card:nth-child(n) { 
+        display: block; 
+    }
+}
+
+
+
+
+
