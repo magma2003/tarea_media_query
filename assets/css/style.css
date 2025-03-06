@@ -121,10 +121,40 @@ footer{
     }
     .fa-solid.fa-bars { 
         display: none;
-      }
+    }
+    section .pagination {
+        display: none;
+    }
 }
 
+.pagination {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #9e417f;
+    width: fit-content;
+    margin: auto;
+  }
 
+  .pagination a {
+    text-decoration: none;
+    color: blue;
+    font-size: 20px;
+    padding: 10px 15px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
 
+  .pagination .active {
+    font-weight: bold;
+    text-decoration: underline;
+  }
 
-
+  .pagination .arrow {
+    font-size: 22px;
+    padding: 10px;
+  }
