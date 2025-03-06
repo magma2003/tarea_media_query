@@ -3,48 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid Layout + flexbox</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a149196749.js" crossorigin="anonymous"></script>
+
+    <title>Tarea Media Query</title>
+
 </head>
 <body>
-<header>Encabezado</header>
-<nav>Menú lateral</nav>
-<section>
-<div class="card-container">
-	<div class="card">
-		<img src="./assets/img/1.jpg" alt="producto1">
-		<h3> producto 1 </h3>
-		<p> descripcion producto 1 <p>
-	</div>
-	<div class="card">
-		<img src="./assets/img/2.jpg" alt="producto2">
-		<h3> producto 2 </h3>
-		<p> descripcion producto 2 <p>
-	</div>
-	<div class="card">
-		<img src="./assets/img/3.jpg" alt="producto3">
-		<h3> producto 3 </h3>
-		<p> descripcion producto 3 <p>
-	</div>
-	<div class="card">
-		<img src="./assets/img/4.jpg" alt="producto1">
-		<h3> producto 1 </h3>
-		<p> descripcion producto 1 <p>
-	</div>
-	<div class="card">
-		<img src="./assets/img/5.jpg" alt="producto2">
-		<h3> producto 2 </h3>
-		<p> descripcion producto 2 <p>
-	</div>
-	<div class="card">
-		<img src="./assets/img/6.jpg" alt="producto3">
-		<h3> producto 3 </h3>
-		<p> descripcion producto 3 <p>
-	</div>
+	<header>
+		<span class="titulo">Pastelería "Piteate un Diabético"</span>
+  		<i class="fa-solid fa-bars"></i>
+	</header>
+	<nav>
+		<label for="opciones">Ordenar por:</label>
+		<p></p>
+		<select id="opciones">
+		<option value="1">Sabrosura</option>
+		<option value="2">Azucares</option>
+		<option value="3">Precio</option>
+		</select>
+	</nav>
 
-</div>	
+	<section>
+		<div class="card-container">
+			<div class="card">
+				<img src="./assets/img/01-negro.jpg" alt="Chocolate Negro">
+				<h3> Chocolate Negro </h3>
+				<p> Antioxidante, mejora el ánimo, corazón saludable, reduce estrés, energía. <p>
+                <button class="comprar"><i class="fa-solid fa-cart-shopping"></i> Agregar al carro</button>
+			</div>
+			<div class="card">
+				<img src="./assets/img/02-piruletas.jpg" alt="Piruletas">
+				<h3> Piruletas </h3>
+				<p> Piruletas rellenas de miles de sabores. <p>
+					<button class="comprar"><i class="fa-solid fa-cart-shopping"></i> Agregar al carro</button>
+			</div>
+			<div class="card">
+				<img src="./assets/img/03-bombones.jpg" alt="Bombones variados">
+				<h3> Bombones rellenos </h3>
+				<p> Caja mixta de bombones. <p>
+					<button class="comprar"><i class="fa-solid fa-cart-shopping"></i> Agregar al carro</button>
+			</div>
+			<div class="card">
+				<img src="./assets/img/04-blanco.jpg" alt="Chocolate Blanco">
+				<h3> Chocolate Blanco </h3>
+				<p> Fuente de calcio, dulce, cremoso, mejora el humor, versátil. <p>
+					<button class="comprar"><i class="fa-solid fa-cart-shopping"></i> Agregar al carro</button>
+			</div>
+			<div class="card">
+				<img src="./assets/img/05-malva.jpg" alt="Malvaviscos">
+				<h3> Malvaviscos </h3>
+				<p> Esponjoso, suave, azucarado, ligero, tierno, esponjoso, dulce, versátil, delicioso, cremoso, aireado, pegajoso, blanco, clásico, golosina, tostado, suavecito, apetitoso, derretible y adictivo. <p>
+				<button class="comprar"><i class="fa-solid fa-cart-shopping"></i> Agregar al carro</button>
+			</div>
+			<div class="card">
+				<img src="./assets/img/06-trufa.jpg" alt="producto3">
+				<h3> Trufas </h3>
+				<p> Exquisita, elegante, indulgente, placentera, gourmet, textura suave, experiencia única, aromática, sofisticada, deliciosa. <p>
+				<button class="comprar"><i class="fa-solid fa-cart-shopping"></i> Agregar al carro</button>
+			</div>
 
-</section>
-<footer>Pie de página</footer>
+		</div>	
+	</section>
+	<footer>        
+		<div>
+			&copy; 2025 Ecommerce Mauricio Carrasco - Todos los derechos reservados
+		</div>
+	</footer>
 </body>
 </html>

@@ -1,4 +1,6 @@
-
+*{
+    font-family: 'Raleway',sans-serif;
+}
 
 body {
     display: grid;
@@ -15,32 +17,46 @@ body {
 }
 
 header{
-background: color #f8d7da;
-grid-area:header;
-text-align: center;
-padding: 10px;
-background: url('../img/header2.jpg') no-repeat center/cover, #F5E8DD;
-height: 30vh;
+    grid-area:header;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    height: 10vh;
+    background: color #f8d7da;
+    color: black;
+    background: url(../img/header.jpg);
+    text-shadow: 1px 1px 5px rgba(0, 255, 255, 10.5); 
+    font-size: 50px; 
+    font-weight: bold; 
 }
 
+i {
+    font-size: 30px; 
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 10.5); 
+}
 nav{
-background: #f8d7da;
-grid-area:nav;
-padding: 10px;
+    background: #f8d7da;
+    grid-area:nav;
+    padding: 10px;
+    text-align: center;
 }
 
 section {
-background: #FFDDE2;
-color: white;
-grid-area:section;
-padding: 10px;
+    background: #FFDDE2;
+    color: white;
+    grid-area:section;
+    padding: 10px;
 }
 
 footer{
-background: #e6a4b4;
-grid-area:footer;
-text-align: center;
-padding: 10px;
+    background: #e6a4b4;
+    grid-area:footer;
+    text-align: center;
+    padding: 10px;
 }
 
 .card-container {
@@ -70,16 +86,17 @@ padding: 10px;
     height: 30vh;
     object-fit: cover;
 }
-/* Aquí probamos la orientacion de la pantalla */
-/* Es útil cuando queremos que un vídeo o imagen se adapte en caso de que un dispositivo se encuentre "recostado".. ejemplo: youtube */
-/* Pueden sacarlo para el desafío, solo era una demostración de como funciona */
-@media (orientation: landscape){
-    body{
-        background: lightblue;
-    }
 
-
+.comprar {
+    background-color: pink; 
+    color: white; 
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    font-size: 16px;
 }
+
 @media (min-width: 576px) {
     
     body{
@@ -102,6 +119,9 @@ padding: 10px;
     .card:nth-child(n) { 
         display: block; 
     }
+    .fa-solid.fa-bars { 
+        display: none;
+      }
 }
 
 
